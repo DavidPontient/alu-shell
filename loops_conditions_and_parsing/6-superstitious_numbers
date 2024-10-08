@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#combiningwhile with case to print 1-20
+count=0
+while [ $count -lt 20 ]
+do
+	((count+=1))
+        echo "$count"
+case $count in
+        4)
+                echo "bad luck from China"
+                ;;
+        9)
+                echo "bad luck from Japan"
+                ;;
+        17)
+                echo "bad luck from Italy"
+                ;;
+esac
+done
