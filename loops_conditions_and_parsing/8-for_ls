@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#used for to iterate through each file in the directory then follow the rules
+for item in *
+do
+	c=$(echo "$item" |rev | cut -d '-' -f1|rev)
+	echo "$c"
+done
